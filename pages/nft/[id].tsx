@@ -16,7 +16,7 @@ function NFTDropPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 flex-col p-12 lg:col-span-6">
+      <div className="flex flex-1 flex-col bg-gray-400 p-12 lg:col-span-6">
         <header className="flex items-center justify-between">
           <h1 className="w-52 cursor-pointer text-xl font-extralight sm:w-80">
             The{' '}
@@ -25,7 +25,7 @@ function NFTDropPage() {
             </span>{' '}
             NFT MARKETPLACE
           </h1>
-          <button className="rounded-full bg-rose-400 px-4 py-2 text-xs font-bold text-white lg:px-5 lg:py-3 lg:text-base">
+          <button className="rounded-full bg-rose-500 px-4 py-2 text-xs font-bold text-white lg:px-5 lg:py-3 lg:text-base">
             Sign In
           </button>
         </header>
@@ -39,9 +39,9 @@ function NFTDropPage() {
           <h1 className="text-3xl font-bold lg:text-5xl lg:font-extrabold">
             The FLUTURE Ape Club | NFT Drop
           </h1>
-          <p className="pt-2 text-xl text-green-500">13 / 21 NFT's claimed</p>
+          <p className="pt-2 text-xl text-green-400">13 / 21 NFT's claimed</p>
         </div>
-        <button className="mt-10 h-16 w-full rounded-full bg-red-600 font-bold text-white">
+        <button className="mt-10 h-16 rounded-full bg-rose-500 text-lg font-bold text-white">
           Mint NFT (0.01 ETH)
         </button>
       </div>

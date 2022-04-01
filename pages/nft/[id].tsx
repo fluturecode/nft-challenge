@@ -9,8 +9,8 @@ function NFTDropPage() {
   console.log(address)
 
   return (
-    <div className="flex h-screen flex-col">
-      <div className="bg-gradient-to-br from-cyan-800 to-rose-800">
+    <div className="flex h-screen flex-col lg:grid lg:grid-cols-10">
+      <div className="bg-gradient-to-br from-cyan-800 to-rose-800 lg:col-span-4">
         <div className="flex flex-col items-center justify-center py-2 lg:min-h-screen">
           <div className="rounded-xl bg-gradient-to-br from-yellow-400 to-purple-600 p-2">
             <img
@@ -35,13 +35,20 @@ function NFTDropPage() {
             NFT MARKETPLACE
           </h1>
           <button
-            onClick={() => connectWithMetamask()}
+            onClick={() => (address ? disconnect() : connectWithMetamask())}
             className="rounded-full bg-rose-500 px-4 py-2 text-xs font-bold text-white lg:px-5 lg:py-3 lg:text-base"
           >
             {address ? 'Please Sign Out' : 'Sign In'}
           </button>
         </header>
         <hr className="my-2 border" />
+        {address && (
+          <p className="text-center text-sm text-rose-500">
+            You're logged in with wallet {address.substring(0, 5)}...
+            {address.substring(address.length - 5)}
+          </p>
+        )}
+
         <div className="mt-10 flex flex-1 flex-col items-center space-y-6 text-center lg:justify-center lg:space-y-0">
           <img
             className="w-80 object-cover pb-10 lg:h-40"

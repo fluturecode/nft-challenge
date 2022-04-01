@@ -41,7 +41,7 @@ function NFTDropPage() {
           </h1>
           <p className="pt-2 text-xl text-green-500">13 / 21 NFT's claimed</p>
         </div>
-        <button className="mt-10 h-16 w-full rounded-full bg-red-600 text-white">
+        <button className="mt-10 h-16 w-full rounded-full bg-red-600 font-bold text-white">
           Mint NFT (0.01 ETH)
         </button>
       </div>

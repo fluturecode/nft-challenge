@@ -11,5 +11,10 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([collection, creator]),
+  types: schemaTypes.concat([
+    // The following are document types which will appear
+    // in the studio.
+    creator,
+    collection,
+  ]),
 })

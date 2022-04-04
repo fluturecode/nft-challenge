@@ -14,6 +14,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'bio',
+      title: 'Bio',
+      type: 'string',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -30,24 +35,5 @@ export default {
         hotspot: true,
       },
     },
-    {
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{ title: 'Normal', value: 'normal' }],
-          lists: [],
-        },
-      ],
-    },
   ],
-  preview: {
-    select: {
-      title: 'name',
-      media: 'image',
-    },
-  },
 }
